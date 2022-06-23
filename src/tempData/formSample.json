@@ -1,0 +1,23 @@
+{
+  "0": "QQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+  "1": [
+    {
+      "label": "PERSONA - Provincia de residencia habitual",
+      "value": "PERSONA.DAMRES"
+    }
+  ],
+  "2": {
+    "label": "PERSONA - Provincia de residencia hace 5 años",
+    "value": "PERSONA.DAMRES5"
+  },
+  "3": null,
+  "4": null,
+  "5": null,
+  "6": null,
+  "7": null,
+  "8": [
+    "table",
+    "chart",
+    "map"
+  ]
+}

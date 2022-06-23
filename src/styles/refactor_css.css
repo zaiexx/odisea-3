@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+.odisea-page-layout {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 0px);
+    align-items: center;
+}
+
+.odisea-page-related-links {
+    width: 100vw;
+    margin: 0px;
+}
+
+.odisea-page-related-links > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: right;
+    flex-basis: 0;
+    background-color: #f4f4f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin: 0px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #333537;
+    font-size: 0.750em;
+    
+}
+
+.odisea-page-related-links > ul > li,
+.odisea-page-related-links > ul > li > a {
+    margin-left: 10px;
+    color: #333537;
+    text-decoration: none;
+}
+
+.odisea-page-header {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.odisea-page-header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.odisea-page-navbar {
+    width: 100vw;
+    background-color: #57a7a2;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    justify-content: center;
+}
+
+.odisea-page-navbar > a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.odisea-page-navbar > a.active,
+.odisea-page-navbar > a:hover {
+    background-color:#028090;
+}
+
+/*a::before{background:#028090;}*/
+
+.odisea-page-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.odisea-page-content-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 88vw;
+    flex-wrap: wrap;
+}
+
+.odisea-page-footer {
+    width: 100vw;
+    text-align: center;
+    background-color: #57a7a2;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.odisea-page-footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+    HEADER
+*/
+.odisea-page-header-logo1 {
+    width: 90px;
+}
+
+.odisea-page-header-logo1 > a > img {
+    width: 90px;
+}
+
+.odisea-page-header-title {
+    margin: 10px;
+}
+
+.odisea-page-header-title > h1 {
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    color: #4F4F4F;
+    line-height: 2rem;
+    font-size: 36px;
+}
+
+.odisea-page-header-title > h2 {
+    color: #4F4F4F;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+.odisea-page-header-title > h3 {
+    color: #57a7a2;
+    font-size: 0.8em;
+}
+
+.odisea-page-header-logo2 {
+}
+
+/*
+    HOME
+*/
+
+.odisea-page-home {
+    flex-grow: 1;
+    width: 100vw;
+    flex-basis: 0;
+}
+
+.odisea-page-home-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.odisea-page-home-content {
+    background-color: rgb(244, 244, 244);
+    width: 100vw;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 17px;
+    color: #333537;
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    line-height: 32px;
+    font-feature-settings: "liga";
+}
+
+.odisea-page-home-content > p {
+    text-align: center;
+}
+
+.odisea-page-home-links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.odisea-page-home-links-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #333537;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.odisea-page-home-links-buttons {
+    text-align: center;   
+    margin-top: 20px;
+}
+
+.odisea-page-home-links-buttons > a {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.odisea-page-home-links-buttons-button {
+    background-color: rgb(87, 167, 162);
+    border-style: none;
+    color: #fff;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.odisea-page-home-links-buttons-button:hover,
+.odisea-page-home-links-buttons-button:focus {
+    background-color: rgb(2, 128, 144);
+    border-color: rgb(2, 128, 144);
+    border-style: none;
+}
+
+/*
+    CONTENT
+*/
+
+.odisea-page-content-form {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+    text-align: left;
+    min-width: 450px;
+}
+.odisea-page-content-more {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+    text-align: left;
+    min-width: 450px;
+}
+
+.odisea-page-content-more .odisea-parent {
+    justify-content: flex-start;
+}
+
+.odisea-page-content-more .odisea-form-accordion-item,
+.odisea-page-content-more .odisea-form-accordion-header .accordion-button {
+    background-color: #5AA39E;
+    color: #fff;
+}
+
+.odisea-page-content-right-text {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+    min-width: 450px;
+}
+
+.odisea-page-content-form > h3, .odisea-page-content-more > h3,
+.odisea-page-content-right-text > h3, .odisea-page-content-right-text > p {
+    text-align:justify;
+    font-family: "Roboto";
+    color: #333537;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 2em;
+}
+
+.odisea-page-content-right-text > p > * > a {
+    text-decoration: none;
+    color: #57a7a2;
+    font-weight: bold;
+}
+
+.odisea-page-content-form > h3,
+.odisea-page-content-more > h3,
+.odisea-page-content-right-text > h3 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.odisea-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+    .odisea-parent {
+        flex-direction:column;
+    }
+}
+
+.odisea-child1 {
+    width: 50%;
+    padding: 0 2em 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .odisea-child1 {
+        width: 100%;
+    }
+}
+
+.odisea-child2 {
+    width: 50%;
+    padding: 0 2em 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .odisea-child2 {
+        width: 100%;
+    }
+}
+
+.test {
+    background-color: #C4C4C4;
+    padding: 0.2em;
+    border-radius: 16px;
+    margin-bottom: 1.5em;
+    margin-top: 0.8em;
+}
+
+/*
+    FOOTER
+*/
+
+.odisea-page-footer-text {
+}
+
+.odisea-page-footer-rrss {
+
+}
+
+
+.odisea-page-footer-text > h2 {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 1.0rem 0rem 0rem 0rem;
+}
+
+.odisea-page-footer-rrss > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    flex-basis: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin: 0px;
+}
+
+.odisea-page-footer-rrss-circle {
+    color: #fff;
+}
+
+.odisea-page-footer-rrss-logo {
+    color: #57a7a2;
+}
+
+/*
+    FOOTER BOTTOM
+*/
+
+.odisea-page-footer-bottom {
+    background-color: #f4f4f5;
+    font-size: 0.7em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.odisea-page-footer-bottom > p {
+    margin-bottom: 0px;
+}
+
+.odisea-page-footer-bottom > * > a {
+    text-decoration: none;
+    color: #57a7a2;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+/*
+    FORM CONTROLS
+*/
+
+.odisea-form {
+
+}
+
+.odisea-form-accordion-item {
+    background-color: #DBDBDB;
+    border: none;
+    border-radius: 22px!important;
+}
+
+.odisea-form-accordion-header {
+    font-weight: 700;
+    text-transform: uppercase;   
+}
+
+.odisea-form-accordion-header .accordion-button {
+    color: rgb(0, 0, 0);
+    background-color: #DBDBDB;
+    border-top-left-radius: calc(1.25rem - 1px) !important;
+    border-top-right-radius: calc(1.25rem - 1px) !important;
+    border-bottom: 3px solid #fff !important;
+}
+
+.odisea-form-accordion-header .accordion-button:focus {
+    box-shadow: 0 0 0 .25rem rgba(87, 167, 162, 0.29);
+}
+
+.odisea-form-accordion-header .collapsed{
+    color: #4F4F4F;
+}
+
+.odisea-form-group {
+    margin: 15px;
+}
+
+.odisea-form-group > select {
+    color: #fff;
+    background-color: #5AA39E;
+}
+
+.odisea-form-group-button {
+    text-align: center;
+}
+
+.form-check {
+    color: #fff !important;
+}
+
+.form-check-input {
+    background-color: #C4C4C4;
+    border: solid 2px #5AA39E;
+}
+
+.odisea-form-check {
+    margin: 5px;
+    color: #fff;
+}
+
+.odisea-form-label {
+    margin-top: 0px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.odisea-form-button-submit {
+    background-color: rgb(87, 167, 162);
+    border-color: rgb(87, 167, 162);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.odisea-form-button-submit:hover,
+.odisea-form-button-submit:focus {
+    background-color: rgb(2, 128, 144);
+    border-color: rgb(2, 128, 144);
+}
+
+.odisea-form-button-submit:focus {
+    box-shadow: 0 0 0 .25rem rgba(87, 167, 162, 0.29);
+}
+
+/*
+    VISUALIZATIONS
+*/
+
+.odisea-page-visualizations {
+    width: 100vw;
+    flex-basis: 0;
+}
+
+.nav-link {
+    color: #57a7a2;
+}
+
+.odisea-page-visualizations-source-selector {
+    width:fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.odisea-page-visualizations-source-selector > form-select{
+    width:fit-content;
+}
+
+.odisea-page-visualizations-spc-layout-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.odisea-page-visualizations-spc-card {
+    /*width: 80%*/
+    max-width: 70%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}

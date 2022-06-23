@@ -1,0 +1,78 @@
+{
+    "version": 1,
+    "name": {
+        "es": "SEGREGACION",
+        "en": "SEGREGACION"
+    },
+    "operation": "arealist",
+    "options": [
+        {
+            "type": "TABLETITLE"
+        },
+        {
+            "type": "ROW",
+            "options": "WHITELIST",
+            "values": [
+                "PERSONA.DAMERES",
+                "PERSONA.DAMERES5",
+                "PERSONA.DAMERESTRAB",
+                "PERSONA.DAMERESTRABNO",
+                "PERSONA.DAMENAC",
+                "PERSONA.DAMETRAB",
+                "PERSONA.DAMRES",
+                "PERSONA.DAMRES5",
+                "PERSONA.DAMNAC"
+            ]
+        },
+        {
+            "type": "TOT",
+            "values": [
+                "totrow",
+                "totcol"
+            ]
+        },
+        {
+            "type": "OUT",
+            "options": "WHITELIST",
+            "values": [
+                {
+                    "name": "PROVINCI",
+                    "label": "PROVINCI",
+                    "entityCode": "IDPROVIN",
+                    "entityLabel": "NOMPROV",
+                    "value": "PROVINCI"
+                },
+                {
+                    "name": "CANTON",
+                    "label": "CANTON",
+                    "entityCode": "IDCANTON",
+                    "entityLabel": "NOMCANTO",
+                    "value": "CANTON"
+                },
+                {
+                    "name": "DISTRITO",
+                    "label": "DISTRITO",
+                    "entityCode": "IDISTRI",
+                    "entityLabel": "NOMDISTR",
+                    "value": "DISTRITO"
+                }
+            ]
+        },
+        {
+            "type": "SEL"
+        },
+        {
+            "type": "UNIV"
+        },
+        {
+            "type": "FIL",
+            "options": "WHITELIST",
+            "values": [
+                "PROVINCI.PROVINCI > 2"
+            ]
+        },
+        {
+            "type": "FMT"
+        }
+    ]
+}

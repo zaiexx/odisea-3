@@ -1,0 +1,554 @@
+[
+  {
+    "id": "census-guatemala-2018",
+    "censusLabel": "Guatemala 2018",
+    "databaseAlias": "gtm2018",
+    "variables": {
+      "DAM": {
+        "residence": "PERSONA.DAMRES",
+        "nac-pop": "PERSONA.DAMNAC",
+        "rec-pop": "PERSONA.DAMRES5",
+        "var2": "DAM",
+        "value": "DAM.REDLABEL",
+        "commuting": "PERSONA.DAMEMCOT",
+        "entityCode": "IDDAM",
+        "entityLabel": "NOMDAM"
+      },
+      "DAME": {
+        "residence": "PERSONA.DAMERES",
+        "nac-pop": "PERSONA.DAMENAC",
+        "rec-pop": "PERSONA.DAMERES5",
+        "var2": "DAME",
+        "value": "DAME.REDLABEL",
+        "commuting": "PERSONA.DAMEMCOT",
+        "entityCode": "IDDAME",
+        "entityLabel": "NOMDAME"
+      },
+      "age": "PERSONA.EDAD"
+    },
+    "labels": {
+      "DAM": {
+        "residence": "PERSONA - Provincia de residencia habitual",
+        "rec-pop": "PERSONA - Provincia de residencia hace 5 años",
+        "commuting": "PERSONA.DAMEMCOT"
+      },
+      "DAME": {
+        "residence": "PERSONA - Provincia de residencia habitual",
+        "rec-pop": "PERSONA - Provincia de residencia hace 5 años",
+        "commuting": "PERSONA.DAMEMCOT"
+      }
+    },
+    "segregationVariables": [
+      {
+        "formId": "var-viv",
+        "name": "TIPOVIV",
+        "label": "Tipo de vivienda"
+      }, {
+        "formId": "var-pared",
+        "name": "PARED",
+        "label": "Material de la pared"
+      }, {
+        "formId": "var-piso",
+        "name": "PISO",
+        "label": "Material del piso"
+      }, {
+        "formId": "var-techo",
+        "name": "TECHO",
+        "label": "Material del techo"
+      }, {
+        "formId": "var-empleo",
+        "name": "SITUEMP",
+        "label": "Situación de empleo"
+      }, {
+        "formId": "var-actividad",
+        "name": "HPET",
+        "label": "Condición de ocupación"
+      }, {
+        "formId": "var-pueblo",
+        "name": "PBLOPER",
+        "label": "Pueblo de pertenencia"
+      }, {
+        "formId": "var-edad-educ",
+        "name": "AESTG3",
+        "label": "Nivel de estudios"
+      }, {
+        "formId": "var-tic",
+        "name": "HTICS",
+        "label": "Uso de TICs"
+      }, {
+        "formId": "var-nivel",
+        "name": "NIVEL",
+        "label": "Grupos de Años de Estudio"
+      }
+    ],
+    "derivedVariables": [
+      {
+        "variableName": "SEXO",
+        "selectLabel": "Sexo",
+        "checkGroupLabel": "Ingrese sexo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Hombre"},
+          {"variableValue": "2", "label": "Mujer"}
+        ]
+      }, {
+        "variableName": "PBLOPER",
+        "selectLabel": "Pueblo de pertenencia",
+        "checkGroupLabel": "Ingrese pueblo de pertenencia:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Indígena"},
+          {"variableValue": "2", "label": "Afrodescendiente"},
+          {"variableValue": "3", "label": "Resto"}
+        ]
+      },
+      {
+        "variableName": "",
+        "selectLabel": "Condición de desempleo",
+        "checkGroupLabel": "Ingrese condición de desempleo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Ocupada"},
+          {"variableValue": "2", "label": "Desocupada"},
+          {"variableValue": "3", "label": "Inactiva"}
+        ]
+      }, {
+        "variableName": "SITUEMP",
+        "selectLabel": "Situación del empleo",
+        "checkGroupLabel": "Ingrese situación de empleo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Empleador(a)"},
+          {"variableValue": "2", "label": "Cuenta propia"},
+          {"variableValue": "3", "label": "Empleado(a)"},
+          {"variableValue": "4", "label": "Familiar auxiliar"},
+          {"variableValue": "5", "label": "No especificado"}
+        ]
+      }, {
+        "variableName": "HTICS",
+        "selectLabel": "Uso de Tics",
+        "checkGroupLabel": "Ingrese uso de TICs en los últimos 3 meses:",
+        "checkItems": [
+          {"variableValue": "1", "label": "No usa"},
+          {"variableValue": "2", "label": "Básico"},
+          {"variableValue": "3", "label": "Medio"},
+          {"variableValue": "4", "label": "Alto"}
+        ]
+      }, {
+        "variableName": "AESTG3",
+        "selectLabel": "Nivel de estudios",
+        "checkGroupLabel": "Ingrese nivel de estudios:",
+        "checkItems": [
+          {"variableValue": "1", "label": "preprimaria"},
+          {"variableValue": "2", "label": "primaria"},
+          {"variableValue": "3", "label": "medio"},
+          {"variableValue": "4", "label": "licenciatura"},
+          {"variableValue": "5", "label": "maestria"},
+          {"variableValue": "6", "label": "doctorado"}
+        ]
+      }
+    ],
+    "filterVariables": [
+      {
+        "variableName": "EDADG4",
+        "selectLabel": "Grandes grupo de edad",
+        "checkGroupLabel": "Edad agrupada:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Niños(as)"},
+          {"variableValue": "2", "label": "Jóvenes"},
+          {"variableValue": "3", "label": "Adultos"},
+          {"variableValue": "4", "label": "Tercera edad"},
+          {"variableValue": "5", "label": "Cuarta edad"}
+        ]
+      }, {
+        "variableName": "EDADGG",
+        "selectLabel": "Edad agrupada",
+        "checkGroupLabel": "Edad agrupada",
+        "checkItems": [
+          {"variableValue": "1", "label": "Menores de 15 años"},
+          {"variableValue": "2", "label": "15 a 29 años"},
+          {"variableValue": "3", "label": "30 a 59 años"},
+          {"variableValue": "4", "label": "60 y más años"}
+        ]
+      }
+    ],
+    "DAPaths": {
+      "DAM": {
+        "geoJSON": "/store/gtm2018_deptos_simp.json",
+        "centroids": "/store/gtm2018_deptos_centroides.json",
+        "codeFeature": "cod_depto",
+        "codeFeatureNum": "CODIGO_NUM"
+      },
+      "DAME": {
+        "geoJSON": "/store/GTM2018_LIMITE_MUNICIPAL_WGS84_simp.json",
+        "centroids": "/store/GTM2018_LIMITE_MUNICIPAL_WGS84_centroides.geojson",
+        "codeFeature": "CODIGO",
+        "codeFeatureNum": "CODIGO_NUM"
+      }
+    }
+  },
+  {
+    "id": "census-peru-2017",
+    "censusLabel": "Perú 2017",
+    "databaseAlias": "per2017",
+    "variables": {
+      "DAM": {
+        "residence": "PERSONA.DAMRES",
+        "nac-pop": "PERSONA.DAMNAC",
+        "rec-pop": "PERSONA.DAMRES5",
+        "var2": "DAM",
+        "value": "DAM.REDLABEL",
+        "commuting": "PERSONA.DAMEMCOT",
+        "entityCode": "IDDAM",
+        "entityLabel": "NOMDAM"
+      },
+      "DAME": {
+        "residence": "PERSONA.DAMERES",
+        "nac-pop": "PERSONA.DAMENAC",
+        "rec-pop": "PERSONA.DAMERES5",
+        "var2": "DAME",
+        "value": "DAME.REDLABEL",
+        "commuting": "PERSONA.DAMEMCOT",
+        "entityCode": "IDDAME",
+        "entityLabel": "NOMDAME"
+      },
+      "age": "PERSONA.EDAD"
+    },
+    "labels": {
+      "DAM": {
+        "residence": "PERSONA - Provincia de residencia habitual",
+        "rec-pop": "PERSONA - Provincia de residencia hace 5 años",
+        "commuting": "PERSONA.DAMEMCOT"
+      },
+      "DAME": {
+        "residence": "PERSONA - Provincia de residencia habitual",
+        "rec-pop": "PERSONA - Provincia de residencia hace 5 años",
+        "commuting": "PERSONA.DAMEMCOT"
+      }
+    },
+    "segregationVariables": [
+      {
+        "formId": "var-viv",
+        "name": "TIPOVIV",
+        "label": "Tipo de vivienda"
+      }, {
+        "formId": "var-pared",
+        "name": "PARED",
+        "label": "Material de la pared"
+      }, {
+        "formId": "var-piso",
+        "name": "PISO",
+        "label": "Material del piso"
+      }, {
+        "formId": "var-techo",
+        "name": "TECHO",
+        "label": "Material del techo"
+      }, {
+        "formId": "var-empleo",
+        "name": "SITUEMP",
+        "label": "Situación de empleo"
+      }, {
+        "formId": "var-actividad",
+        "name": "HPET",
+        "label": "Condición de ocupación"
+      }, {
+        "formId": "var-pueblo",
+        "name": "PBLOPER",
+        "label": "Pueblo de pertenencia"
+      }, {
+        "formId": "var-edad-educ",
+        "name": "AESTG3",
+        "label": "Nivel de estudios"
+      }, {
+        "formId": "var-tic",
+        "name": "HTICS",
+        "label": "Uso de TICs"
+      }, {
+        "formId": "var-nivel",
+        "name": "NIVEL",
+        "label": "Grupos de Años de Estudio"
+      }
+    ],
+    "derivedVariables": [
+      {
+        "variableName": "SEXO",
+        "selectLabel": "Sexo",
+        "checkGroupLabel": "Ingrese sexo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Hombre"},
+          {"variableValue": "2", "label": "Mujer"}
+        ]
+      }, {
+        "variableName": "PBLOPER",
+        "selectLabel": "Pueblo de pertenencia",
+        "checkGroupLabel": "Ingrese pueblo de pertenencia:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Indígena"},
+          {"variableValue": "2", "label": "Afrodescendiente"},
+          {"variableValue": "3", "label": "Resto"}
+        ]
+      },
+      {
+        "variableName": "",
+        "selectLabel": "Condición de desempleo",
+        "checkGroupLabel": "Ingrese condición de desempleo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Ocupada"},
+          {"variableValue": "2", "label": "Desocupada"},
+          {"variableValue": "3", "label": "Inactiva"}
+        ]
+      }, {
+        "variableName": "SITUEMP",
+        "selectLabel": "Situación del empleo",
+        "checkGroupLabel": "Ingrese situación de empleo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Empleador(a)"},
+          {"variableValue": "2", "label": "Cuenta propia"},
+          {"variableValue": "3", "label": "Empleado(a)"},
+          {"variableValue": "4", "label": "Familiar auxiliar"},
+          {"variableValue": "5", "label": "No especificado"}
+        ]
+      }, {
+        "variableName": "HTICS",
+        "selectLabel": "Uso de Tics",
+        "checkGroupLabel": "Ingrese uso de TICs en los últimos 3 meses:",
+        "checkItems": [
+          {"variableValue": "1", "label": "No usa"},
+          {"variableValue": "2", "label": "Básico"},
+          {"variableValue": "3", "label": "Medio"},
+          {"variableValue": "4", "label": "Alto"}
+        ]
+      }, {
+        "variableName": "AESTG3",
+        "selectLabel": "Nivel de estudios",
+        "checkGroupLabel": "Ingrese nivel de estudios:",
+        "checkItems": [
+          {"variableValue": "1", "label": "preprimaria"},
+          {"variableValue": "2", "label": "primaria"},
+          {"variableValue": "3", "label": "medio"},
+          {"variableValue": "4", "label": "licenciatura"},
+          {"variableValue": "5", "label": "maestria"},
+          {"variableValue": "6", "label": "doctorado"}
+        ]
+      }
+    ],
+    "filterVariables": [
+      {
+        "variableName": "EDADG4",
+        "selectLabel": "Grandes grupo de edad",
+        "checkGroupLabel": "Edad agrupada:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Niños(as)"},
+          {"variableValue": "2", "label": "Jóvenes"},
+          {"variableValue": "3", "label": "Adultos"},
+          {"variableValue": "4", "label": "Tercera edad"},
+          {"variableValue": "5", "label": "Cuarta edad"}
+        ]
+      }, {
+        "variableName": "EDADGG",
+        "selectLabel": "Edad agrupada",
+        "checkGroupLabel": "Edad agrupada",
+        "checkItems": [
+          {"variableValue": "1", "label": "Menores de 15 años"},
+          {"variableValue": "2", "label": "15 a 29 años"},
+          {"variableValue": "3", "label": "30 a 59 años"},
+          {"variableValue": "4", "label": "60 y más años"}
+        ]
+      }
+    ],
+    "DAPaths": {
+      "DAM": {
+        "geoJSON": "/store/Departamento_simp.json",
+        "centroids": "/store/Centroide_Departamento.json",
+        "codeFeature": "CODIGO_DEP",
+        "codeFeatureNum": "CODIGO_NUM"
+      },
+      "DAME": {
+        "geoJSON": "/store/Distrito_simp2.json",
+        "centroids": "/store/Centroide_Distrito.json",
+        "codeFeature": "CODIGO_DIS",
+        "codeFeatureNum": "CODIGO_NUM"
+      }
+    }
+  },
+  {
+    "id": "census-costarica-2011",
+    "censusLabel": "Costa Rica 2011",
+    "databaseAlias": "cri2011",
+    "variables": {
+      "DAM": {
+        "residence": "PERSONA.DAMRES",
+        "nac-pop": "PERSONA.DAMNAC",
+        "rec-pop": "PERSONA.DAMRES5",
+        "var2": "DAM",
+        "value": "DAM.REDLABEL",
+        "commuting": "PERSONA.DAMEMCOT",
+        "entityCode": "IDDAM",
+        "entityLabel": "NOMDAM"
+      },
+      "DAME": {
+        "residence": "PERSONA.DAMERES",
+        "nac-pop": "PERSONA.DAMENAC",
+        "rec-pop": "PERSONA.DAMERES5",
+        "var2": "DAME",
+        "value": "DAME.REDLABEL",
+        "commuting": "PERSONA.DAMEMCOT",
+        "entityCode": "IDDAME",
+        "entityLabel": "NOMDAME"
+      },
+      "age": "PERSONA.EDAD"
+    },
+    "labels": {
+      "DAM": {
+        "residence": "PERSONA - Provincia de residencia habitual",
+        "rec-pop": "PERSONA - Provincia de residencia hace 5 años",
+        "commuting": "PERSONA.DAMEMCOT"
+      },
+      "DAME": {
+        "residence": "PERSONA - Provincia de residencia habitual",
+        "rec-pop": "PERSONA - Provincia de residencia hace 5 años",
+        "commuting": "PERSONA.DAMEMCOT"
+      }
+    },
+    "segregationVariables": [
+      {
+        "formId": "var-viv",
+        "name": "TIPOVIV",
+        "label": "Tipo de vivienda"
+      }, {
+        "formId": "var-pared",
+        "name": "PARED",
+        "label": "Material de la pared"
+      }, {
+        "formId": "var-piso",
+        "name": "PISO",
+        "label": "Material del piso"
+      }, {
+        "formId": "var-techo",
+        "name": "TECHO",
+        "label": "Material del techo"
+      }, {
+        "formId": "var-empleo",
+        "name": "SITUEMP",
+        "label": "Situación de empleo"
+      }, {
+        "formId": "var-actividad",
+        "name": "HPET",
+        "label": "Condición de ocupación"
+      }, {
+        "formId": "var-pueblo",
+        "name": "PBLOPER",
+        "label": "Pueblo de pertenencia"
+      }, {
+        "formId": "var-edad-educ",
+        "name": "AESTG3",
+        "label": "Nivel de estudios"
+      }, {
+        "formId": "var-tic",
+        "name": "HTICS",
+        "label": "Uso de TICs"
+      }, {
+        "formId": "var-nivel",
+        "name": "NIVEL",
+        "label": "Grupos de Años de Estudio"
+      }
+    ],
+    "derivedVariables": [
+      {
+        "variableName": "SEXO",
+        "selectLabel": "Sexo",
+        "checkGroupLabel": "Ingrese sexo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Hombre"},
+          {"variableValue": "2", "label": "Mujer"}
+        ]
+      }, {
+        "variableName": "PBLOPER",
+        "selectLabel": "Pueblo de pertenencia",
+        "checkGroupLabel": "Ingrese pueblo de pertenencia:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Indígena"},
+          {"variableValue": "2", "label": "Afrodescendiente"},
+          {"variableValue": "3", "label": "Resto"}
+        ]
+      },
+      {
+        "variableName": "",
+        "selectLabel": "Condición de desempleo",
+        "checkGroupLabel": "Ingrese condición de desempleo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Ocupada"},
+          {"variableValue": "2", "label": "Desocupada"},
+          {"variableValue": "3", "label": "Inactiva"}
+        ]
+      }, {
+        "variableName": "SITUEMP",
+        "selectLabel": "Situación del empleo",
+        "checkGroupLabel": "Ingrese situación de empleo:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Empleador(a)"},
+          {"variableValue": "2", "label": "Cuenta propia"},
+          {"variableValue": "3", "label": "Empleado(a)"},
+          {"variableValue": "4", "label": "Familiar auxiliar"},
+          {"variableValue": "5", "label": "No especificado"}
+        ]
+      }, {
+        "variableName": "HTICS",
+        "selectLabel": "Uso de Tics",
+        "checkGroupLabel": "Ingrese uso de TICs en los últimos 3 meses:",
+        "checkItems": [
+          {"variableValue": "1", "label": "No usa"},
+          {"variableValue": "2", "label": "Básico"},
+          {"variableValue": "3", "label": "Medio"},
+          {"variableValue": "4", "label": "Alto"}
+        ]
+      }, {
+        "variableName": "AESTG3",
+        "selectLabel": "Nivel de estudios",
+        "checkGroupLabel": "Ingrese nivel de estudios:",
+        "checkItems": [
+          {"variableValue": "1", "label": "preprimaria"},
+          {"variableValue": "2", "label": "primaria"},
+          {"variableValue": "3", "label": "medio"},
+          {"variableValue": "4", "label": "licenciatura"},
+          {"variableValue": "5", "label": "maestria"},
+          {"variableValue": "6", "label": "doctorado"}
+        ]
+      }
+    ],
+    "filterVariables": [
+      {
+        "variableName": "EDADG4",
+        "selectLabel": "Grandes grupo de edad",
+        "checkGroupLabel": "Edad agrupada:",
+        "checkItems": [
+          {"variableValue": "1", "label": "Niños(as)"},
+          {"variableValue": "2", "label": "Jóvenes"},
+          {"variableValue": "3", "label": "Adultos"},
+          {"variableValue": "4", "label": "Tercera edad"},
+          {"variableValue": "5", "label": "Cuarta edad"}
+        ]
+      }, {
+        "variableName": "EDADGG",
+        "selectLabel": "Edad agrupada",
+        "checkGroupLabel": "Edad agrupada",
+        "checkItems": [
+          {"variableValue": "1", "label": "Menores de 15 años"},
+          {"variableValue": "2", "label": "15 a 29 años"},
+          {"variableValue": "3", "label": "30 a 59 años"},
+          {"variableValue": "4", "label": "60 y más años"}
+        ]
+      }
+    ],
+    "DAPaths": {
+      "DAM": {
+        "geoJSON": "/store/cr2011_prov_simp.json",
+        "centroids": "/store/cr2011_prov_centroides.json",
+        "codeFeature": "CODPROV",
+        "codeFeatureNum": "CODIGO_NUM"
+      },
+      "DAME": {
+        "geoJSON": "/store/CostaRica_Canton_2011_simp.json",
+        "centroids": "/store/cr2011_canton_centroides.json",
+        "codeFeature": "CODIGO",
+        "codeFeatureNum": "CODIGO_NUM"
+      }
+    }
+  }
+]

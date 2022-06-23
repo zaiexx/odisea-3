@@ -1,0 +1,24 @@
+{
+  "0": "hhhhHHHHHH",
+  "1": [
+    {
+      "label": "PERSONA - Provincia de residencia habitual",
+      "value": "PERSONA.DAMRES"
+    }
+  ],
+  "2": [
+    "totrow",
+    "totcol"
+  ],
+  "3": {
+    "name": "CANTON",
+    "label": "CANTON",
+    "entityCode": "IDCANTON",
+    "entityLabel": "NOMCANTO",
+    "value": "CANTON"
+  },
+  "4": null,
+  "5": null,
+  "6": null,
+  "7": null
+}

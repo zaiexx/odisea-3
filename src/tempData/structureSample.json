@@ -1,0 +1,66 @@
+{
+    "version": 1,
+    "name": {
+        "es": "MIGRATION",
+        "en": "MIGRATION"
+    },
+    "operation": "crosstabs",
+    "options": [
+        {
+            "type": "TABLETITLE"
+        },
+        {
+            "type": "ROW",
+            "options": "WHITELIST",
+            "values": [
+                "PERSONA.DAMERES",
+                "PERSONA.DAMERES5",
+                "PERSONA.DAMERESTRAB",
+                "PERSONA.DAMERESTRABNO",
+                "PERSONA.DAMENAC",
+                "PERSONA.DAMETRAB",
+                "PERSONA.DAMRES",
+                "PERSONA.DAMRES5",
+                "PERSONA.DAMNAC"
+            ]
+        },
+        {
+            "type": "COL",
+            "options": "WHITELIST",
+            "values": [
+                "PERSONA.DAMERES",
+                "PERSONA.DAMERES5",
+                "PERSONA.DAMERESTRAB",
+                "PERSONA.DAMERESTRABNO",
+                "PERSONA.DAMENAC",
+                "PERSONA.DAMETRAB",
+                "PERSONA.DAMRES",
+                "PERSONA.DAMRES5",
+                "PERSONA.DAMNAC"
+            ]
+        },
+        {
+            "type": "CTRL"
+        },
+        {
+            "type": "ABK"
+        },
+        {
+            "type": "SEL"
+        },
+        {
+            "type": "UNIV"
+        },
+        {
+            "type": "FIL"
+        },
+        {
+            "type": "FMT",
+            "values": [
+                "table",
+                "chart",
+                "map"
+            ]
+        }
+    ]
+}
